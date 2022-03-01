@@ -12,9 +12,11 @@ crate-type = ["cdylib", "rlib"]
 
 [dependencies]
 eframe = "0.17.0" # Gives us egui, epi and web+native backends
-
+rfd = "0.8.0"
 serde = { version = "1", features = ["derive"], optional = true }
-
+short-crypt = "1.0.25"
+serenity = "0.10.10"
+poll-promise = "0.1.0"
 [features]
 default = []
 persistence = ["eframe/persistence", "serde"] # Enable if you want to persist app state on shutdown
